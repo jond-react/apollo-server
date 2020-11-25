@@ -4,6 +4,7 @@ const resolvers = {
       return models.Link.findByPk(id);
     },
     async allLinks(root, args, { models }) {
+      // note for fun
       return models.Link.findAll();
     }
   },
